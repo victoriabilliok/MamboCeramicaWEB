@@ -1,0 +1,243 @@
+// VARIABLES
+
+$gris-body:  rgb(41, 41, 41);
+$gris-claro: rgb(74, 77, 74);
+$fondo: #facf86;
+$fondo-menu: blanchedalmond;
+$fondo-form:#FFE4E1;
+$fondo-header:rgb(247, 155, 122);
+$fondo-footer: #f7cda7;
+
+$degrade: linear-gradient(#f79c7a, #f7cea7);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+// estilos de texto
+
+@import "texto";
+
+/*---------cuerpo--------*/
+
+body {
+    background-color: #facf86;
+    width: auto;
+}
+
+footer {
+    font-style: oblique;
+    background-color: #f7cda7;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+        audio {
+        width: 200px; height: 30px ;
+    }
+}
+
+// Menú
+/*-------- Menu --------*/
+header {
+    background-color: rgb(247, 155, 122);
+    padding: 5px;
+    nav {
+        /*estilos*/
+        ul {
+            list-style: none;
+                li {
+                    padding: 7px;
+                    display: inline;
+                    background-color: blanchedalmond;
+                    border-radius: 6%;
+                        a {
+                        text-decoration: none;
+                        color: rgb(65, 65, 65);   
+                            a:hover {
+                                 color: salmon;
+                                 font-style: oblique;
+                                }
+                        }
+                }
+            }
+        }
+}
+
+.menu {
+    font-style: normal;
+    font-family: 'Special Elite', cursive;
+    font-size: 18px;
+    margin: 10px;
+    padding-left: 0;
+}
+
+.menuVisible {
+        position: sticky;
+        top: 10px;
+        bottom: 30px;
+        width: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+}
+
+/*--------formulario--------*/
+
+fieldset {
+        padding: 10px;
+        width: auto;
+        background-color: #FFE4E1;
+        border: solid;
+        border-color: rgb(41, 41, 41);
+        margin: 5px;
+}
+
+/*--------redes sociales--------*/
+.gridRedes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+
+}
+
+.redes {
+    display: inline;
+    justify-items: start;
+    align-items: start;
+}
+
+.svg {
+    width: 35px;
+    height:35px;
+    fill: currentColor;
+    padding:5px;
+    background-color: blanchedalmond;
+    border-radius: 10%;
+}
+
+.idioma {
+    display: grid;
+    justify-items: end;
+    align-items: start;
+}
+
+.svgIdioma {
+    width:25px;
+    height: 25px;
+    fill:currentColor;
+}
+
+/* --------LOGO --------*/
+#logo {
+    width: auto;
+    background-color: #facf9e;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.logoRedondeado {
+    border-radius: 30%;
+    border-style: solid;
+    border-color: black;
+    width: 100px; height: 100px;
+}
+
+/*--------IMAGENES--------*/
+.banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 15px;
+}
+/*elementos hijos*/
+.banner__marco {
+    padding: 5px;
+    background-color: blanchedalmond;
+    border: solid rgb(65, 65, 65);
+}
+
+#marginFooter {
+    margin-bottom: 8em;
+}
+
+.foto {
+    transition: all 2s;
+}
+
+.foto:hover {
+    height: 282px;
+    width: 482px;
+    background-image: $degrade;
+    padding: 25px;
+    border: solid rgb(58, 58, 58);
+}
+
+/*--------MAPAS--------*/
+.locales {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 3fr 3fr;
+    grid-row-gap: 30px;
+    justify-items: space-evenly;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+/*hijo*/
+.celdaMapas {
+    /*gradiente*/
+    background: #F79C7A;
+    background: -webkit-linear-gradient(bottom left, #F79C7A, #F7CEA7);
+    background: -moz-linear-gradient(bottom left, #F79C7A, #F7CEA7);
+    background: linear-gradient(to top right, #F79C7A, #F7CEA7);
+    justify-self: center;
+    align-self: center;
+    padding: 15px;
+    border: solid rgb(58, 58, 58);
+    border-radius: 8%;
+}
+
+/*-------PRODUCTOS--------*/
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    width: auto;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+.colorR {
+    color: rgb(41, 41, 41);
+}
+
+.colorR:hover {
+    color: snow;
+}
+
+.mambos {
+    transition: all 1s;
+}
+
+.mambos:hover {
+    height: 259px;
+    width: 266px;
+    border-radius: 5%;
+}

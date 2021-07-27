@@ -1,0 +1,91 @@
+// fuente
+$texto: 'Special Elite', cursive;
+$gris-body:  rgb(41, 41, 41);
+$gris-claro: rgb(74, 77, 74);
+
+ /*estilos de texto*/
+ h1 {
+    color:$gris-body;
+    font-style: oblique;
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-family:$texto;
+}
+
+h2 {
+    color: $gris-body;
+    font-size: 20px;
+    font-family:$texto;
+    text-align: center;
+    font-style: oblique;
+}
+
+h3 {
+    color: $gris-body;
+    font-size: 15px;
+    font-family:$texto;
+}
+
+h4 {
+    color: $gris-claro;
+    font-size: 15px;
+    font-family:$texto;
+}
+
+//-----------BUCLE------------
+
+
+span {
+    font-size: 18px;
+    color: salmon;
+    font-style: oblique;
+}
+
+p {
+    color: $gris-body;
+    font-style: normal;
+    font-size: 19px;
+    font-family:$texto;
+    text-align: justify;
+    line-height: 2;
+    display: inline;
+    margin-top: 15px;
+        a {
+            color: $gris-body;
+            text-decoration: none;
+            background-color: rgb(247, 155, 122);
+            font-size: 14px;
+            padding: 5px;
+        }
+}
+
+form {
+    color:$gris-body;
+    font-weight: bold;
+    font-family:$texto;
+        p {
+            font-size: 20px;
+            font-style: italic;
+            font-family:$texto;
+        }
+}
+
+.parrafo {
+    transform: scale(0.95, 0.95);
+}
+    
+.firma {
+    font-style: oblique;
+}
+
+.margenes {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.padding {
+    padding-bottom: 15px;
+}
