@@ -251,12 +251,6 @@ fieldset {
   margin: 10px;
   padding: 20px; }
 
-.colorR {
-  color: #292929; }
-
-.colorR:hover {
-  color: snow; }
-
 .mambos {
   transition: all 1s; }
 
