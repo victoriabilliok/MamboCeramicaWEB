@@ -7,6 +7,7 @@ $fondo-menu: blanchedalmond;
 $fondo-form:#FFE4E1;
 $fondo-header:rgb(247, 155, 122);
 $fondo-footer: #f7cda7;
+$fondo-logo: #facf9e;
 
 $degrade: linear-gradient(#f79c7a, #f7cea7);
 
@@ -22,13 +23,13 @@ $degrade: linear-gradient(#f79c7a, #f7cea7);
 /*---------cuerpo--------*/
 
 body {
-    background-color: #facf86;
+    background-color: $fondo-logo;
     width: auto;
 }
 
 footer {
     font-style: oblique;
-    background-color: #f7cda7;
+    background-color: $fondo-footer;
     position: fixed;
     bottom: 0;
     width: 100%;
