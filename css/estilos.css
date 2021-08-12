@@ -199,6 +199,10 @@ fieldset {
   background-color: blanchedalmond;
   border: solid #414141; }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
 #marginFooter {
   margin-bottom: 8em; }
 
