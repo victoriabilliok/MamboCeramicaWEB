@@ -194,8 +194,8 @@ fieldset {
     grid-template-columns: 5fr 5fr;
     grid-template-rows: 3fr 3fr;
     grid-row-gap: 30px;
-    justify-items: space-evenly;
-    justify-content: space-evenly;
+    justify-items: center;
+    justify-content: center;
     align-items: center;
     align-content: center;
 }
@@ -206,11 +206,20 @@ fieldset {
     background: -webkit-linear-gradient(bottom left, #F79C7A, #F7CEA7);
     background: -moz-linear-gradient(bottom left, #F79C7A, #F7CEA7);
     background: linear-gradient(to top right, #F79C7A, #F7CEA7);
-    justify-self: center;
-    align-self: center;
     padding: 15px;
     border: solid rgb(58, 58, 58);
     border-radius: 8%;
+    width: 420px;
+    height: 370px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.mapas {
+    width: 400px;
+    height: 300px;  
 }
 
 /*-------PRODUCTOS--------*/
@@ -237,4 +246,91 @@ fieldset {
     height: 259px;
     width: 266px;
     border-radius: 5%;
+}
+
+/*Media Querie*/
+    /*para Smartphone*/
+@media (min-width: 320px) {
+    .locales {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 10px;
+    }
+    /*hijo*/
+    .celdaMapas {
+        /*gradiente*/
+        background: #F79C7A;
+        background: -webkit-linear-gradient(bottom left, #F79C7A, #F7CEA7);
+        background: -moz-linear-gradient(bottom left, #F79C7A, #F7CEA7);
+        background: linear-gradient(to top right, #F79C7A, #F7CEA7);
+        padding: 15px;
+        margin: 10px;
+        border: solid rgb(58, 58, 58);
+        border-radius: 8%;
+    }
+}
+
+    /*para Tablet*/
+@media (min-width: 768px) {
+    .locales {
+        display: flex;
+        flex-direction:column;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 10px;
+    }
+    /*hijo*/
+    .celdaMapas {
+        /*gradiente*/
+        background: #F79C7A;
+        background: -webkit-linear-gradient(bottom left, #F79C7A, #F7CEA7);
+        background: -moz-linear-gradient(bottom left, #F79C7A, #F7CEA7);
+        background: linear-gradient(to top right, #F79C7A, #F7CEA7);
+        padding: 15px;
+        margin: 10px;
+        border: solid rgb(58, 58, 58);
+        border-radius: 8%;
+    }
+}
+
+@media (min-width: 1024px) {
+    /*--------MAPAS--------*/
+.locales {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 3fr 3fr;
+    grid-row-gap: 30px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+/*hijo*/
+.celdaMapas {
+    /*gradiente*/
+    background: #F79C7A;
+    background: -webkit-linear-gradient(bottom left, #F79C7A, #F7CEA7);
+    background: -moz-linear-gradient(bottom left, #F79C7A, #F7CEA7);
+    background: linear-gradient(to top right, #F79C7A, #F7CEA7);
+    padding: 15px;
+    border: solid rgb(58, 58, 58);
+    border-radius: 8%;
+    width: 420px;
+    height: 370px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.mapas {
+    width: 400px;
+    height: 300px;  
+    }
 }
