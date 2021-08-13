@@ -272,6 +272,30 @@ fieldset {
         border: solid rgb(58, 58, 58);
         border-radius: 8%;
     }
+
+    /*-------PRODUCTOS--------*/
+    .productos {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin: 10px;
+        max-width: 100%;
+    }
+    .mambos {
+        transition: all 1s;
+        padding: 5px;
+        border: solid rgb(65, 65, 65);
+    }
+    
+    .mambos:hover {
+        border-radius: 5%;
+        padding: 10px;
+        background-color: $fondo-menu;
+    }
 }
 
     /*para Tablet*/
@@ -332,5 +356,32 @@ fieldset {
 .mapas {
     width: 400px;
     height: 300px;  
+    }
+
+/*-------PRODUCTOS--------*/
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    width: auto;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    }
+
+.mambos {
+    transition: all 1s;
+    border: solid rgb(65, 65, 65);
+    }
+
+.mambos:hover {
+    height: 259px;
+    width: 266px;
+    border-radius: 5%;
     }
 }
